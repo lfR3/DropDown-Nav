@@ -42,8 +42,24 @@
                     </li>
                 </ul>
             </nav>
+            
+            <div class="bar">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
         </div>
     </header>
+
+    <script>
+        var navBtn = document.querySelector('.bar');
+        var menuBar = document.querySelector('.nav-list');
+
+        navBtn.addEventListener('click', function(){
+            navBtn.classList.toggle('active');
+            menuBar.classList.toggle('show');
+        })
+    </script>
     
 </body>
 </html>
